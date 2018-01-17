@@ -39,7 +39,10 @@ class BinarySearchTree {
 
 	bfs(cb, node=this.root) {
     // Write an algorithm using breadth first search that takes in a callback function and calls it for every node
-    // Expected order: 25, 15, 197, 17, 97, 9997
+	// Expected order: 25, 15, 197, 17, 97, 9997
+		if(!node)return;
+		cb(node.data)
+		this
 	}
 }
 
